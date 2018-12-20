@@ -30,15 +30,25 @@
         }
 
         .slide::after {
-          padding-top: initial;
-          height: initial;
-          background: black;
+          display: none;
         }
 
         *,
         *::before,
         *::after {
           font-family: "Helvetica", sans-serif !important;
+        }
+
+        .large {
+          font-size: 48px;
+        }
+
+        pre code {
+          font-family: monospace !important;
+        }
+
+        pre code::before {
+          display: none;
         }
     </style>
 </head>
@@ -49,33 +59,165 @@
         <p>Милослав Волосков</p>
     </header>
 
+    <!-- cover -->
     <section class="slide clear" id="cover">
-        <figure>
-            <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-            <figcaption class="copyright right white">
-                <a href="http://fiftyfootshadows.net/">© John Carey</a>
-            </figcaption>
+      <img class="cover" src="pictures/cover.jpg" alt="">
+    </section>
+
+    <!-- about -->
+    <section class="slide">
+      <h2>Обо мне</h2>
+      <ol>
+        <li>Архитектор ПО</li>
+        <li>Делаю фронтенд</li>
+        <li><em>Не дизайнер</em></li>
+      </ol>
+    </section>
+
+    <!-- Good minimalism example -->
+    <section class="slide">
+      <img class="cover" src="pictures/good_minimalism_2.png" alt="">
+    </section>
+
+    <!-- Another good minimalism example -->
+    <section class="slide">
+      <img class="cover" src="pictures/good_minimalism_1.png" alt="">
+    </section>
+
+    <!-- import great design -->
+    <section class="slide">
+      <code class="cover large">import&nbsp;great_design;</code>
+    </section>
+
+    <!-- Bad form -->
+
+    <!-- Good form -->
+
+    <!-- Bad form vs good form -->
+
+    <!-- About vertical rhythm -->
+    <section class="slide">
+      <img class="cover" src="pictures/vertical_rhytm.png" alt="">
+    </section>
+
+    <!-- import vertical rhythm -->
+    <section class="slide">
+      <code class="cover large">import&nbsp;vertical_rhythm;</code>
+    </section>
+
+    <!-- Website built with 8px-grid -->
+    <section class="slide">
+      <img class="cover" src="pictures/with_grid.png" alt="">
+    </section>
+
+    <!-- Screen resolutions -->
+    <section class="slide">
+      <img class="cover" src="pictures/screens.png" alt="">
+    </section>
+
+    <!-- Small details -->
+
+    <!-- Rems -->
+    <section class="slide">
+        <pre class="cover">
+            <code>:root {</code>
+            <code>    font-size: 16px;</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <!-- .5rem -->
+    <section class="slide">
+        <pre class="cover">
+            <code>.button {</code>
+            <code>    padding: .5rem 1rem;</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <!-- import grid point -->
+    <section class="slide">
+      <code class="cover large">import&nbsp;grid_points;</code>
+    </section>
+
+    <!-- sass function -->
+    <section class="slide">
+        <pre class="cover">
+            <code>@function grid_points ($count) {</code>
+            <code>    @return 8px * $count;</code>
+            <code>}</code>
+        </pre>
+    </section>
+
+    <!-- measuring in photoshop -->
+
+    <!-- Designer marks up grid to help developer -->
+
+    <!-- pixel perfect -->
+
+    <!-- pixel fitting -->
+    <section class="slide">
+      <img class="cover" src="pictures/pixel-fitting.png" alt="">
+    </section>
+
+    <!-- scaling the whole website -->
+
+    <!-- wysiwygs -->
+
+    <!-- declarativeness -->
+
+    <!-- silver bullet? -->
+    <section class="slide">
+      <img class="cover" src="pictures/silver_bullet.jpg" alt="">
+    </section>
+
+    <!-- no -->
+    <section class="slide">
+      <span class="cover large">Нет.</span>
+    </section>
+
+    <!-- cover again -->
+    <section class="slide">
+      <img class="cover" src="pictures/cover.jpg" alt="">
+    </section>
+
+    <!-- great non-grid website -->
+    <section class="slide">
+      <img class="cover" src="pictures/web_art_1.png" alt="">
+    </section>
+
+    <!-- another great non-grid website -->
+    <section class="slide">
+      <img class="cover" src="pictures/web_art_2.png" alt="">
+    </section>
+
+    <!-- Aalto quote -->
+    <section class="slide">
+        <figure class="cover">
+            <blockquote>
+              <p>Nothing is as dangerous in architecture as dealing with separated problems.</p>
+              <p>If we split life into separated problems we split the possibilities to make good building&nbsp;art.</p>
+            </blockquote>
+            <figcaption>Alvar Aalto</figcaption>
         </figure>
-        <style>
-            #cover h2 {
-                margin: 30px 0 0;
-                color: white;
-                text-align: center;
-                font-size: 70px;
-            }
+    </section>
 
-            #cover p {
-                margin: 10px 0 0;
-                text-align: center;
-                color: white;
-                font-style: italic;
-                font-size: 20px;
-            }
+    <!-- Two types of grid -->
+    <section class="slide">
+      <img class="cover" src="pictures/hard.png" alt="">
+    </section>
 
-            #cover p a {
-                color: white;
-            }
-        </style>
+    <section class="slide">
+      <img class="cover" src="pictures/soft.png" alt="">
+    </section>
+
+    <!-- Resets -->
+
+    <!-- Links -->
+
+
+    <section class="slide">
+      <img class="cover" src="pictures/cover.jpg" alt="">
     </section>
 
     <section class="slide">
@@ -227,13 +369,11 @@
     </section>
 
     <footer class="badge">
-        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+        <a href="https://github.com/uyouthe/gridtalk">Fork me on GitHub</a>
     </footer>
 
     <div class="progress"></div>
 
     <script src="shower/shower.min.js"></script>
-    <!-- Copyright © 2018 Yours Truly, Famous Inc. -->
-
 </body>
 </html>
