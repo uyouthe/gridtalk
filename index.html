@@ -6,21 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="shower/themes/ribbon/styles/styles.css">
     <style>
+        @font-face {
+          font-family: "Helvetica";
+          src: url("helvetica-bold.woff") format("woff");
+          font-weight: bold;
+        }
+
+        @font-face {
+          font-family: "Helvetica";
+          src: url("helvetica-medium.woff") format("woff");
+          font-weight: normal;
+        }
+
+        @font-face {
+          font-family: "Helvetica";
+          src: url("helvetica-medium-italic.woff") format("woff");
+          font-weight: normal;
+          font-style: italic;
+        }
+
         .shower {
-            --slide-ratio: calc(16 / 9);
+          --slide-ratio: calc(16 / 9);
+        }
+
+        .slide::after {
+          padding-top: initial;
+          height: initial;
+          background: black;
+        }
+
+        *,
+        *::before,
+        *::after {
+          font-family: "Helvetica", sans-serif !important;
         }
     </style>
 </head>
 <body class="shower list">
 
     <header class="caption">
-        <h1>Shower Presentation Engine</h1>
-        <p>Yours Truly, Famous Inc.</p>
+        <h1>Восьмипиксельная сетка</h1>
+        <p>Милослав Волосков</p>
     </header>
 
-    <section class="slide" id="cover">
-        <h2>Shower Presentation Engine</h2>
-        <p>Brought to you by <a href="http://pepelsbey.net">Vadim Makeev</a></p>
+    <section class="slide clear" id="cover">
         <figure>
             <img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
             <figcaption class="copyright right white">
